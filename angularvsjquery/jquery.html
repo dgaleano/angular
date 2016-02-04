@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery vs Angular difference</title>
+</head>
+<body>
+	<h1>Hola</h1>
+	<form action=""><input type="text"></form>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<script>
+		var $text = $("h1").text() + " ";
+		console.log("hola mundo");
+		var $input = $("input");
+		$input.on("keyup",function(){
+			$("h1").text($text + $input.val());	
+		});
+	</script>
+</body>
+</html>
